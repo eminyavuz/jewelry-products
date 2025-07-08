@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('../Fonts-20250706T220947Z-1-001/Fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-BookOblique';
+  src: url('../Fonts-20250706T220947Z-1-001/Fonts/avenir/Avenir-BookOblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: oblique;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../Fonts-20250706T220947Z-1-001/Fonts/montserat/Montserrat-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../Fonts-20250706T220947Z-1-001/Fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Avenir-Book', 'Montserrat-Regular', Arial, sans-serif;
+  background: #F5F5F5;
+  margin: 0;
+  padding: 0;
+}
+
+h2, .product-list-title {
+  font-family: 'Avenir-Book', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin: 32px 0 24px 0;
+  text-align: center;
+}
+
+.product-list-container {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  background: #F5F5F5;
+}
+
+@media (max-width: 1200px) {
+  .product-list-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product-list-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-list-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-list-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-list-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list-container {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0 4px;
+  }
+  .product-card {
+    width: 90vw !important;
+    min-width: 220px;
+    max-width: 98vw;
+  }
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.product-card {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+.product-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+} 
