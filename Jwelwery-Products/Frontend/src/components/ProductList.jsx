@@ -43,7 +43,7 @@ const ProductList = () => {
     if (filters.minPopularity) params.push(`minPopularity=${filters.minPopularity}`);
     if (filters.maxPopularity < 5) params.push(`maxPopularity=${filters.maxPopularity}`);
     const query = params.length ? `?${params.join("&")}` : "";
-    fetch(`/api/products${query}`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/products${query}`)
       .then((res) => {
         if (!res.ok) throw new Error("API error");
         return res.json();
